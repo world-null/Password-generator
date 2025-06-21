@@ -14,7 +14,7 @@ function App() {
 const generatePassword = useCallback(() => {
   let charSet = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz'
   if (numberAllow) charSet += '0123456789'
-  if (charAllow) charSet += '!@#$%&*'
+  if (charAllow) charSet += '!@#$%&*~'
   let password = ''
   for (let i = 1; i < lenght; i++) {
     let randomIndex = Math.floor(Math.random() * charSet.length +1)
